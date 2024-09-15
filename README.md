@@ -1,7 +1,7 @@
 # Document Retrieval System
 
 This project implements a document retrieval system for chat applications to use as context. It provides a backend for retrieving documents, storing them in a database, and caching responses for faster retrieval.
-
+  AS an example newspaper is being retrived as document .
 ## Architecture
 
 The system consists of the following components:
@@ -78,26 +78,26 @@ Purpose in Your Project:
 To store, index, and retrieve documents based on semantic search queries. It will handle the core document retrieval functionality, allowing for fast searches across large document sets.
 # 4. Redis
 - Redis is an in-memory key-value store known for its speed and support for caching and message brokering.
-Purpose in Your Project:
+Purpose in the  Project:
 To cache frequently searched queries and their results, which speeds up response times for repeated searches.
 Redis can also be used as a message broker for managing background tasks like scraping articles.
 # 5. Psycopg2-binary
 - This is a PostgreSQL database adapter for Python. It allows Python programs to interact with a PostgreSQL database.
-Purpose in Your Project:
+Purpose in the Project:
 To interact with PostgreSQL for storing and retrieving user-related data, such as user requests and request counts for rate-limiting.
 It will manage relational data like user activity logs or metadata associated with stored documents.
 # 6. Newspaper3k
 - Newspaper3k is a Python library for scraping and extracting articles from news websites.
-Purpose in Your Project:
+Purpose in the Project:
 To scrape news articles in the background and store the extracted content in Elasticsearch for future document retrieval.
 It simplifies the process of gathering news data, handling tasks like parsing, content extraction, and cleaning.
 # 7. Pydantic
 - Pydantic is a data validation and settings management library for Python. It uses Python type hints to validate data structures.
-Purpose in Your Project:
+Purpose in the Project:
 To validate and parse the input data (such as query parameters for the /search endpoint).
 Pydantic models will ensure that the incoming API requests meet the required schema and handle type coercion.
 # 8. Pydantic-settings
 - An extension of Pydantic, pydantic-settings allows managing environment variables and configurations with Pydantic models.
-Purpose in Your Project:
-To manage your application’s configuration, such as database connection strings, API keys, Redis configurations, Elasticsearch details, etc., from environment variables.
+Purpose in the Project:
+To manage the application’s configuration, such as database connection strings, API keys, Redis configurations, Elasticsearch details, etc., from environment variables.
 It centralizes configuration management, making it easier to configure and modify settings without hardcoding values.
