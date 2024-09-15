@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+elasticsearch
+redis
+psycopg2-binary
+newspaper3k
+pydantic
+pydantic-settings
+pytest
+pytest-asyncio
+httpx
